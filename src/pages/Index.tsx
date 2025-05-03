@@ -1,13 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import Layout from '@/components/layout/Layout';
+import FeaturedGames from '@/components/games/FeaturedGames';
+import CategoryList from '@/components/games/CategoryList';
+import GameGrid from '@/components/games/GameGrid';
+import { games } from '@/data/mockData';
 
 const Index = () => {
+  const trendingGames = games.filter(game => game.trending);
+  const newGames = games.filter(game => game.new);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <Layout>
+      <div className="pb-12">
+        {/* Hero Carousel */}
+        <FeaturedGames />
+        
+        {/* Category Navigation */}
+        <CategoryList />
+        
+        {/* Trending Games */}
+        <GameGrid games={trendingGames} title="Trending Now" />
+        
+        {/* New Releases */}
+        <GameGrid games={newGames} title="New Releases" />
       </div>
-    </div>
+    </Layout>
   );
 };
 
