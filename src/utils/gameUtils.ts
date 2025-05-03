@@ -57,3 +57,19 @@ export const getNewGames = async (): Promise<Game[]> => {
   const games = await fetchGamesFromJson();
   return games.filter(game => game.new);
 };
+
+/**
+ * Get all categories that have games
+ */
+export const getActiveCategories = async (): Promise<string[]> => {
+  const games = await fetchGamesFromJson();
+  const categories = new Set<string>();
+  
+  games.forEach(game => {
+    game.categories.forEach(category => {
+      categories.add(category);
+    });
+  });
+  
+  return Array.from(categories);
+};
