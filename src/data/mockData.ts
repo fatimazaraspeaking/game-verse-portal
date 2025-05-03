@@ -10,6 +10,12 @@ export interface Game {
   new: boolean;
   trending: boolean;
   releaseDate: string;
+  iframeUrl?: string;
+  controls?: {
+    [key: string]: string;
+  };
+  developerName?: string;
+  playerCount?: string;
 }
 
 export interface Category {

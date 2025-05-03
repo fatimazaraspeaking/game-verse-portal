@@ -2,7 +2,7 @@
 import { useParams } from 'react-router-dom';
 import { games, categories } from '@/data/mockData';
 import Layout from '@/components/layout/Layout';
-import GameGrid from '@/components/games/GameGrid';
+import GameCard from '@/components/games/GameCard';
 import { NotFound } from './NotFound';
 
 const CategoryPage = () => {
@@ -30,7 +30,7 @@ const CategoryPage = () => {
         {filteredGames.length > 0 ? (
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
             {filteredGames.map((game) => (
-              <GameGrid games={filteredGames} title="" />
+              <GameCard key={game.id} game={game} />
             ))}
           </div>
         ) : (

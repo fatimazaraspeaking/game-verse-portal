@@ -1,0 +1,164 @@
+
+{
+  "games": [
+    {
+      "id": "game-1",
+      "slug": "space-blaster",
+      "title": "Space Blaster",
+      "description": "Blast through space in this fast-paced arcade shooter. Destroy enemy ships, collect power-ups, and save the galaxy from an alien invasion. Features multiple levels, boss battles, and high score tracking.",
+      "thumbnail": "https://images.unsplash.com/photo-1614469723922-c043ad9fd036?q=80&w=400&h=300&auto=format&fit=crop",
+      "categories": ["action", "adventure"],
+      "featured": true,
+      "new": false,
+      "trending": true,
+      "releaseDate": "2024-04-15",
+      "iframeUrl": "https://htmlpreview.github.io/?https://github.com/end3r/Gamedev-Canvas-workshop/blob/gh-pages/lesson10.html",
+      "controls": {
+        "arrows": "Move",
+        "space": "Shoot/Jump",
+        "p": "Pause"
+      },
+      "developerName": "GameVerse Studios",
+      "playerCount": "Single Player"
+    },
+    {
+      "id": "game-2",
+      "slug": "puzzle-master",
+      "title": "Puzzle Master",
+      "description": "Test your brain with over 100 challenging puzzles. Solve intricate patterns, unravel mysteries, and compete against time. Perfect for puzzle enthusiasts of all ages with increasing difficulty levels.",
+      "thumbnail": "https://images.unsplash.com/photo-1605870445919-838d190e8e1b?q=80&w=400&h=300&auto=format&fit=crop",
+      "categories": ["puzzle"],
+      "featured": false,
+      "new": true,
+      "trending": false,
+      "releaseDate": "2025-05-01",
+      "iframeUrl": "https://htmlpreview.github.io/?https://github.com/end3r/Gamedev-Canvas-workshop/blob/gh-pages/lesson10.html",
+      "controls": {
+        "mouse": "Select/Place",
+        "r": "Reset Level"
+      },
+      "developerName": "Mind Games Inc",
+      "playerCount": "Single Player"
+    },
+    {
+      "id": "game-3",
+      "slug": "turbo-racer",
+      "title": "Turbo Racer",
+      "description": "Feel the adrenaline in this high-speed racing game. Choose from 20 customizable vehicles, race across 15 unique tracks, and compete against AI or friends in multiplayer mode.",
+      "thumbnail": "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=400&h=300&auto=format&fit=crop",
+      "categories": ["racing", "sports"],
+      "featured": true,
+      "new": false,
+      "trending": true,
+      "releaseDate": "2024-03-10",
+      "iframeUrl": "https://htmlpreview.github.io/?https://github.com/end3r/Gamedev-Canvas-workshop/blob/gh-pages/lesson10.html",
+      "controls": {
+        "arrows": "Drive",
+        "space": "Nitro Boost",
+        "shift": "Drift"
+      },
+      "developerName": "Speed Demons",
+      "playerCount": "1-4 Players"
+    },
+    {
+      "id": "game-4",
+      "slug": "battle-tactics",
+      "title": "Battle Tactics",
+      "description": "Command your forces in this turn-based strategy game. Build your army, research technologies, and outmaneuver your opponents using superior tactics and strategy.",
+      "thumbnail": "https://images.unsplash.com/photo-1611996575749-79a3a250f948?q=80&w=400&h=300&auto=format&fit=crop",
+      "categories": ["strategy"],
+      "featured": false,
+      "new": true,
+      "trending": false,
+      "releaseDate": "2025-04-28",
+      "iframeUrl": "https://htmlpreview.github.io/?https://github.com/end3r/Gamedev-Canvas-workshop/blob/gh-pages/lesson10.html",
+      "controls": {
+        "mouse": "Select Units/Issue Commands",
+        "tab": "Cycle Through Units",
+        "esc": "Menu"
+      },
+      "developerName": "Strategy Masters",
+      "playerCount": "Single Player"
+    },
+    {
+      "id": "game-5",
+      "slug": "zombie-survival",
+      "title": "Zombie Survival",
+      "description": "Survive the zombie apocalypse in this intense action-adventure. Scavenge for supplies, craft weapons, and defend yourself against hordes of the undead in an open world.",
+      "thumbnail": "https://images.unsplash.com/photo-1616567214738-22964a7ad6a5?q=80&w=400&h=300&auto=format&fit=crop",
+      "categories": ["action", "adventure"],
+      "featured": true,
+      "new": false,
+      "trending": true,
+      "releaseDate": "2024-02-14",
+      "iframeUrl": "https://htmlpreview.github.io/?https://github.com/end3r/Gamedev-Canvas-workshop/blob/gh-pages/lesson10.html",
+      "controls": {
+        "wasd": "Move",
+        "mouse": "Aim",
+        "click": "Shoot",
+        "e": "Interact"
+      },
+      "developerName": "Undead Studios",
+      "playerCount": "Single Player"
+    },
+    {
+      "id": "game-6",
+      "slug": "sweet-match",
+      "title": "Sweet Match",
+      "description": "Match colorful candies in this addictive puzzle game. Complete challenging levels, unlock power-ups, and compete with friends for the highest score.",
+      "thumbnail": "https://images.unsplash.com/photo-1611996575749-79a3a250f948?q=80&w=400&h=300&auto=format&fit=crop",
+      "categories": ["puzzle"],
+      "featured": false,
+      "new": false,
+      "trending": true,
+      "releaseDate": "2023-12-01",
+      "iframeUrl": "https://htmlpreview.github.io/?https://github.com/end3r/Gamedev-Canvas-workshop/blob/gh-pages/lesson10.html",
+      "controls": {
+        "mouse": "Swap Candies",
+        "r": "Restart Level"
+      },
+      "developerName": "Sweet Games",
+      "playerCount": "Single Player"
+    },
+    {
+      "id": "game-7",
+      "slug": "football-champions",
+      "title": "Football Champions",
+      "description": "Lead your team to victory in this realistic football simulation. Train players, manage tactics, and compete in leagues and tournaments around the world.",
+      "thumbnail": "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?q=80&w=400&h=300&auto=format&fit=crop",
+      "categories": ["sports", "strategy"],
+      "featured": true,
+      "new": false,
+      "trending": false,
+      "releaseDate": "2024-01-05",
+      "iframeUrl": "https://htmlpreview.github.io/?https://github.com/end3r/Gamedev-Canvas-workshop/blob/gh-pages/lesson10.html",
+      "controls": {
+        "wasd": "Move Player",
+        "space": "Pass/Shoot",
+        "shift": "Sprint"
+      },
+      "developerName": "Sports Elite",
+      "playerCount": "1-2 Players"
+    },
+    {
+      "id": "game-8",
+      "slug": "medieval-kingdoms",
+      "title": "Medieval Kingdoms",
+      "description": "Build and expand your medieval kingdom in this epic strategy game. Form alliances, wage wars, and lead your civilization from the Dark Ages to the Renaissance.",
+      "thumbnail": "https://images.unsplash.com/photo-1546531130-0157c4eea91a?q=80&w=400&h=300&auto=format&fit=crop",
+      "categories": ["strategy", "adventure"],
+      "featured": false,
+      "new": true,
+      "trending": true,
+      "releaseDate": "2025-04-30",
+      "iframeUrl": "https://htmlpreview.github.io/?https://github.com/end3r/Gamedev-Canvas-workshop/blob/gh-pages/lesson10.html",
+      "controls": {
+        "mouse": "Select/Command",
+        "qwer": "Special Abilities",
+        "tab": "Overview Map"
+      },
+      "developerName": "History Games",
+      "playerCount": "Single Player"
+    }
+  ]
+}
