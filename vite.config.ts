@@ -20,8 +20,21 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // Add these settings for better error handling
   build: {
     sourcemap: true,
+    // Optimize for static site generation
+    outDir: 'dist',
+    assetsDir: 'assets',
+    // Enable minification for production
+    minify: 'terser',
+    // Generate separate chunks for better caching
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+        }
+      }
+    }
   },
 }));
