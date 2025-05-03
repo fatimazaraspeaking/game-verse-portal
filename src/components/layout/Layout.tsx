@@ -1,8 +1,7 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import { Helmet } from 'react-helmet';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -17,25 +16,54 @@ const Layout: React.FC<LayoutProps> = ({
   description = "Play thousands of free online HTML5 games instantly. No downloads, just fun! Action, puzzle, racing, and more at GameVerse.",
   ogImage = "https://lovable.dev/opengraph-image-p98pqg.png"
 }) => {
+  
+  // Update document metadata when component mounts or props change
+  useEffect(() => {
+    // Update title
+    document.title = title;
+    
+    // Update meta tags
+    const metaTags = {
+      description: description,
+      "og:type": "website",
+      "og:title": title,
+      "og:description": description,
+      "og:image": ogImage,
+      "twitter:card": "summary_large_image",
+      "twitter:title": title,
+      "twitter:description": description,
+      "twitter:image": ogImage,
+    };
+    
+    // Update or create meta tags
+    Object.entries(metaTags).forEach(([name, content]) => {
+      // Check if meta tag exists
+      let metaElement = document.querySelector(`meta[name="${name}"]`) || 
+                         document.querySelector(`meta[property="${name}"]`);
+      
+      if (!metaElement) {
+        // Create new meta tag if it doesn't exist
+        metaElement = document.createElement('meta');
+        if (name.startsWith('og:')) {
+          metaElement.setAttribute('property', name);
+        } else {
+          metaElement.setAttribute('name', name);
+        }
+        document.head.appendChild(metaElement);
+      }
+      
+      // Set content attribute
+      metaElement.setAttribute('content', content);
+    });
+    
+    // Cleanup function to restore original title
+    return () => {
+      // You could reset meta tags here if needed
+    };
+  }, [title, description, ogImage]);
+  
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={ogImage} />
-        
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={ogImage} />
-      </Helmet>
-      
       <Navbar />
       <main className="flex-1">
         {children}
